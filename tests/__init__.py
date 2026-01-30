@@ -1,0 +1,1 @@
+"""Тесты French Assistant."""

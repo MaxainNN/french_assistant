@@ -1,0 +1,46 @@
+# French Assistant - Dependencies
+# ================================
+
+# LangChain Core
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-core>=0.2.0
+langchain-text-splitters>=0.2.0
+langchain-huggingface>=0.0.3  # опционально, есть fallback на langchain-community
+
+# Vector Store
+chromadb>=0.4.0
+
+# Embeddings
+sentence-transformers>=2.2.0
+
+# LLM Support - OpenAI
+langchain-openai>=0.1.0
+
+# LLM Support - HuggingFace (опционально, для локальных моделей)
+transformers>=4.35.0
+torch>=2.0.0
+accelerate>=0.25.0
+
+# Для работы с Saiga и другими русскоязычными моделями (опционально)
+bitsandbytes>=0.41.0  # для квантизации
+
+# Utilities
+pyyaml>=6.0
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+
+# Re-ranking (опционально)
+# sentence-transformers[cross-encoder]
+
+# Tracing & Monitoring (опционально)
+# langsmith>=0.0.70
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Development
+black>=23.0.0
+isort>=5.12.0
+mypy>=1.7.0
